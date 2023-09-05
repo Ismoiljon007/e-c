@@ -14,10 +14,10 @@
                         <div class="mt-4 flex justify-between mb-4">
                             <div>
                                 <h3 class="text-sm text-gray-700">
-                                    <a href="#">
+                                    <NuxtLink :to="`/product/${item.id}`">
                                         <span aria-hidden="true" class="absolute inset-0"></span>
-                                        {{ item?.description }}
-                                    </a>
+                                        {{ item?.title }}
+                                    </NuxtLink>
                                 </h3>
                                 <p class="mt-1 text-sm text-gray-500">{{ item?.category }}</p>
                             </div>
